@@ -19,28 +19,28 @@ Cluster math.NT:
 Kevin Ford, Scott  Ahlgren, Alexandru Zaharescu, Florin P. Boca, Jesse Thorner, Bruce  Reznick
 
 Cluster math.AP:
-Jeremy Tyson, M. Burak Erdoğan, Vera Mikyoung Hur, Jared  Bronski, Eduard-Wilhelm Kirr, Nikolaos Tzirakis, Richard S. Laugesen
+Jeremy Tyson, M. Burak Erdoğan, Vera Mikyoung Hur, Jared  Bronski, Eduard-Wilhelm Kirr, Nikolaos Tzirakis, Richard S. Laugesen, Daniel B. Cooney
 
 Cluster math.AG:
-Sheldon Katz , Christopher  Dodd, Steven  Bradlow, William  Haboush, Jeremiah  Heller, S. P. Dutta
+Sheldon Katz , Christopher  Dodd, Steven  Bradlow, William  Haboush, Jeremiah  Heller, Felix Janda, S. P. Dutta
 
 Cluster math.DG:
-Pierre Albin, Rui Loja Fernandes, Eugene M.  Lerman, Anil N. Hirani, Gabriele La Nave
+Pierre Albin, Rui Loja Fernandes, Eugene M.  Lerman, Pei-Kun Hung, Anil N. Hirani, Gabriele La Nave
 
 Cluster math.GT:
-Nathan M.  Dunfield, Rosemary Guzman
+Nathan M.  Dunfield, Rosemary Guzman, Jacob Rasmussen, Sarah Dean Rasmussen
 
 Cluster math.CO:
 Alexandr  Kostochka, Alexander  Yong, Jozsef Balogh, Yuliy Baryshnikov
 
 Cluster math.MP:
-Rinat Kedem, Kay  Kirkpatrick, Philippe Di Francesco, Zoi Rapti
+Rinat Kedem, Kay  Kirkpatrick, Philippe Di Francesco, Amanda Young
 
 Cluster math.PR:
-Renming Song, Richard B. Sowers, Partha S. Dey, Runhuan Feng
+Renming Song, Richard B. Sowers, Partha S. Dey, Xuan Wu, Runhuan Feng, Tolulope Fadina
 
 Cluster cs.IT:
-Iwan Duursma, Felix Leditzky
+Iwan Duursma, Felix Leditzky, Yuan Liu
 
 Cluster math.AT:
 Randy McCarthy, Charles  Rezk, Vesna Stojanoska, Matthew Ando, Daniel Berwick-Evans
@@ -56,6 +56,15 @@ Lee DeVille, Vadim Zharnitsky
 
 Cluster math.MG:
 Igor G. Nikolaev, Igor Mineyev, Aimo  Hinkkanen
+
+Cluster cond-mat.mtrl:
+Xiaochen Jing
+
+Cluster stat.AP:
+Zhiyu Quan
+
+Cluster q-bio.PE:
+Zoi Rapti
 
 ```
 
