@@ -4,7 +4,7 @@ This repository contains two Python scripts to cluster faculty members based on 
 
 * clusters-by-frequency.py: Clusters faculty members based on their most frequent tags.
 
-names.txt has the input list of faculty members. It's best if this list has names in the same format as they appear on arXiv.
+names.txt has the input list of faculty members. It's best if this list has names in the same format as they appear on arXiv. Even then, there may be multiple people with the same name on arXiv, or some faculty members have no preprints available on arxiv, in which case this script does not work well.
 
 To install the required libraries, run:
 

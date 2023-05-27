@@ -61,7 +61,7 @@ def extract_tags(all_publications):
         tags = []
         for publication in publications:
             # Regular expression to match arXiv taxonomy codes (e.g., math.PR or math.AT)
-            regex = re.compile(r'\b[a-zA-Z]+[.][a-zA-Z]+\b')
+            regex = re.compile(r'\b[a-z]+(?:-?[a-z]+)?[.][A-Za-z]{2,}\b')
             extracted_tags = regex.findall(' '.join(publication['categories']))
             tags.extend(extracted_tags)
         faculty_tags[faculty] = tags
