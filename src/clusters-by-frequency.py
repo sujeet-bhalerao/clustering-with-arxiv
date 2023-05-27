@@ -17,7 +17,7 @@ def read_faculty_names(filename):
     return faculty_names
 
 def get_publications(faculty_names):
-    filename = 'publications.json'
+    filename = 'data/publications.json'
 
     try:
         print("Trying to load publications from file...")
@@ -69,10 +69,10 @@ def extract_tags(all_publications):
 
     return faculty_tags
 
-faculty_names = read_faculty_names('names.txt')
+faculty_names = read_faculty_names('data/names.txt')
 all_publications = get_publications(faculty_names)
 faculty_tags = extract_tags(all_publications)
-with open('faculty_tags.json', 'w') as outfile:
+with open('data/faculty_tags.json', 'w') as outfile:
     json.dump(faculty_tags, outfile)
 
 def jaccard_similarity(list1, list2):

@@ -6,6 +6,12 @@ This repository contains two Python scripts to cluster faculty members based on 
 
 names.txt has the input list of faculty members. It's best if this list has names in the same format as they appear on arXiv.
 
+To install the required libraries, run:
+
+```bash
+pip install requests arxiv fuzzywuzzy scipy numpy matplotlib scikit-learn
+```
+
 The output clusters for clusters-by-frequency.py will look like this: 
 
 ```
@@ -52,3 +58,5 @@ Cluster math.MG:
 Igor G. Nikolaev, Igor Mineyev, Aimo  Hinkkanen
 
 ```
+
+The output of hierarchical-clustering.py is a dendrogram saved in the output folder.
