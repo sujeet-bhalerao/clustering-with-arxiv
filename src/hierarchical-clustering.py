@@ -7,7 +7,6 @@ from scipy.spatial.distance import pdist
 import matplotlib.pyplot as plt
 from scipy.cluster.hierarchy import dendrogram
 from sklearn.feature_extraction.text import CountVectorizer
-from collections import Counter
 from fuzzywuzzy import fuzz
 
 def read_faculty_names(filename):
