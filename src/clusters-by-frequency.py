@@ -69,10 +69,11 @@ faculty_tags = extract_tags(all_publications)
 with open('data/faculty_tags.json', 'w') as outfile:
     json.dump(faculty_tags, outfile)
 
-def jaccard_similarity(list1, list2):
-    s1 = set(list1)
-    s2 = set(list2)
-    return len(s1.intersection(s2)) / len(s1.union(s2))
+"""def jaccard_similarity(list1, list2):
+s1 = set(list1)
+s2 = set(list2)
+return len(s1.intersection(s2)) / len(s1.union(s2))
+"""
 
 def assign_to_most_frequent_cluster(faculty_tags):
     faculty_clusters = {}
