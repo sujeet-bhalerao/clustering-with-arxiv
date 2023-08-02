@@ -26,20 +26,20 @@ def get_publications(faculty_names):
             print(f"Fetching publications for {name}")
             query = f"au:{name}"
             search = arxiv.Search(query=query, max_results=100)
-            threshold = 95  # Start with a high threshold
-            while threshold >= 80:  # Lower the threshold until it reaches 80
+            threshold = 95  
+            while threshold >= 80:  
                 for result in search.results():
                     for author in result.authors:
                         if fuzz.ratio(str(author), name) > threshold:
                             if name not in all_publications:
                                 all_publications[name] = []
                             all_publications[name].append({'title': result.title, 'authors': [str(author) for author in result.authors], 'categories': result.categories})
-                            break  # No need to check the other authors
-                if name in all_publications and all_publications[name]:  # If any publications were found, break the loop
+                            break 
+                if name in all_publications and all_publications[name]:  
                     break
-                else:  # If no publications were found, lower the threshold
+                else:  
                     threshold -= 5
-            time.sleep(3)  # To prevent rate limiting
+            time.sleep(3)  
 
         print("Saving publications to file...")
         with open(filename, 'w') as file:
@@ -96,12 +96,12 @@ def assign_to_most_frequent_cluster(faculty_tags):
         next_tags = sorted_tags[1:]
 
         for next_tag in next_tags:
-            if next_tag in faculty_clusters and next_tag != tag:  # Check if next_tag is not the same as lone_member's current tag
+            if next_tag in faculty_clusters and next_tag != tag:  
                 add_to_cluster(lone_member, next_tag)
                 faculty_clusters[tag].remove(lone_member)
                 break
 
-    # Remove any empty clusters
+
     faculty_clusters = {tag: members for tag, members in faculty_clusters.items() if members}
 
     return faculty_clusters
